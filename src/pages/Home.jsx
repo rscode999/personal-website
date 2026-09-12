@@ -1,19 +1,26 @@
 import React from 'react';
+
+import './Home.css';
+
+import upcomingEvents from '../components/UpcomingEventsData.js';
+import resume from '../assets/placeholder.pdf';
+
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import backgroundImage from '../assets/background.png';
-import './Home.css';
+import Pool from '../components/Pool.jsx';
+import ProjectTable from '../components/ProjectTable.jsx';
+
 
 export default function App() {
+
   return (
     <div className="app-container">
       
-      {/* Background Image Layer */}
       <div 
-        className="bg-image"
+        className="background-image"
         style={{ backgroundImage: `url(${backgroundImage})` }}
       >
-        <div className="bg-overlay" />
       </div>
 
       <Navbar />
@@ -22,14 +29,13 @@ export default function App() {
         
         {/* Hero Section */}
         <section className="hero-section">
-          <span className="hero-tag">Frontend Developer & Designer</span>
-          <h1 className="hero-title">Building digital experiences that matter.</h1>
+          <h1 className="hero-title">Reece Shiraishi</h1>
           <p className="hero-desc">
-            I'm Alex, a passionate developer focused on building clean, responsive, and user-centric web applications using modern technologies.
+            I'm Reece Shiraishi, a passionate all-around developer. My skills range from bare-metal oscilloscope work, to web development, to everything in between. 
           </p>
           <div className="hero-buttons">
-            <a href="#projects" className="btn-primary">View My Work</a>
-            <a href="#contact" className="btn-secondary">Contact Me</a>
+            <a href={resume} className="btn-primary">Resume</a>
+            <a href="https://github.com/rscode999" className="btn-secondary">GitHub</a>
           </div>
         </section>
 
@@ -40,37 +46,19 @@ export default function App() {
             <p className="about-text">
               I have a strong background in web development, working primarily with JavaScript, React, and modern build tools like Vite. I love turning complex problems into simple, beautiful, and intuitive interfaces. When I'm not coding, you can find me exploring open-source projects or learning new design patterns.
             </p>
-            <div className="skills-card">
-              <h3>Core Skills</h3>
-              <div className="skills-flex">
-                {['JavaScript (ES6+)', 'React', 'Vite', 'HTML5 / CSS3', 'Git & GitHub', 'REST APIs', 'UI/UX Design'].map((skill, index) => (
-                  <span key={index} className="skill-badge">{skill}</span>
-                ))}
-              </div>
-            </div>
+            
+            <Pool title={"Hello"} items={["hello", "im so cuet"]}/>
           </div>
         </section>
 
-        {/* Projects Section */}
+
         <section id="projects" className="section border-top">
           <h2 className="section-title">Featured Projects</h2>
-          <div className="projects-grid">
-            {[
-              { title: "E-Commerce Dashboard", desc: "A sleek analytics interface built for online store owners using React.", tag: "React" },
-              { title: "Task Management App", desc: "A productivity tool featuring drag-and-drop mechanics and real-time state updates.", tag: "Vite" },
-              { title: "Weather Forecast PWA", desc: "A responsive weather application leveraging external APIs with location tracking.", tag: "CSS3" }
-            ].map((project, idx) => (
-              <div key={idx} className="project-card">
-                <div>
-                  <span className="project-tag">{project.tag}</span>
-                  <h3 className="project-name">{project.title}</h3>
-                  <p className="project-desc">{project.desc}</p>
-                </div>
-                <a href="#" className="project-link">Learn more &rarr;</a>
-              </div>
-            ))}
-          </div>
+
+          {/* title, description, linkText, linkUrl, imageUrl */}
+          <ProjectTable projects={upcomingEvents}/>
         </section>
+
 
         {/* Contact Section */}
         <section id="contact" className="section border-top contact-section">
