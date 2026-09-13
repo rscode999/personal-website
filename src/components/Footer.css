@@ -3,6 +3,14 @@
   color: #94a3b8;
   padding: 2rem 0;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  box-sizing: border-box;
+  z-index: 10;
 }
 
 .footer-container {

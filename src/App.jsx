@@ -7,20 +7,19 @@ import Projects from './pages/Projects.jsx'
 import Layout from './components/Layout.jsx'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <BrowserRouter>
       <Routes>
-        <Route element={<Layout />}>
+        <Route>
           <Route path="/" element={<Home />} />
           <Route path="*" element={<Home />} />
-          <Route path="home" element={<Home />} />
           <Route path="projects" element={<Projects />} />
         </Route>
       </Routes>
     </BrowserRouter>
-  )
+  );
 }
 
-export default App
+export default App;
