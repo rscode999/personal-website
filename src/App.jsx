@@ -11,13 +11,14 @@ function App() {
 
   return (
     <HashRouter>
-      <Layout>
-        <Routes>
+      <Routes>
+        {/* Layout acts as the parent wrapper for all routes */}
+        <Route>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="*" element={<Home />} />
-        </Routes>
-      </Layout>
+        </Route>
+      </Routes>
     </HashRouter>
   );
 }

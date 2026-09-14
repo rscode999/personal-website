@@ -10,6 +10,7 @@ const Layout = () => {
         <Navbar />
       </div>
       <main>
+        {/* This is where Home or Projects will magically appear */}
         <Outlet />
       </main>
       <div className='footer'>
