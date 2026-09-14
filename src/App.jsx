@@ -5,15 +5,17 @@ import './App.css';
 import Home from './pages/Home.jsx';
 import Projects from './pages/Projects.jsx';
 import Layout from './components/Layout.jsx';
+import ScrollToTop from './components/ScrollToTop.jsx';
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <HashRouter>
+      <ScrollToTop /> 
+
       <Routes>
-        {/* Layout acts as the parent wrapper for all routes */}
-        <Route>
+        <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="*" element={<Home />} />
@@ -22,5 +24,6 @@ function App() {
     </HashRouter>
   );
 }
+
 
 export default App;
