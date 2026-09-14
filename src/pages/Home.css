@@ -33,11 +33,11 @@ body {
   max-width: 1150px;
   margin: 0 auto;
   padding: 3rem 2rem;
-  min-height: 65vh;
+  min-height: 25vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .hero-title {
@@ -54,7 +54,7 @@ body {
 .hero-desc {
   color: #cbd5e1;
   font-size: 1.15rem;
-  max-width: 600px;
+  max-width: 800px;
   line-height: 1.6;
   margin: 0 auto 2rem auto;
   text-align: center;

@@ -13,12 +13,12 @@ export default function Navbar() {
 
         <div className="navbar-links">
           <Link to="/">Home</Link>
-          <Link to="projects">Projects</Link>
-          {/* <a href="#contact">Contact</a> */}
+          <a href="/projects#top">Projects</a>
+          <a href='https://www.youtube.com/watch?v=xvFZjo5PgG0'>Deep Dark Secrets</a>
         </div>
 
-        <a href="#contact" className="navbar-btn">
-          Let's Talk
+        <a href="mailto:rcs374@cornell.edu" className="navbar-btn">
+          Contact
         </a>
       </div>
     </nav>

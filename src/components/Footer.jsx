@@ -9,8 +9,8 @@ export default function Footer() {
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-socials">
-          <a href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>
-          <a href="https://linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://github.com/rscode999" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://linkedin.com/in/reece-shiraishi-86087b2b2" target="_blank" rel="noreferrer">LinkedIn</a>
         </div>
       </div>
     </footer>

@@ -1,0 +1,97 @@
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Trebuchet MS", Ubuntu, sans-serif;
+  background-color: #0f172a;
+  color: #f8fafc;
+}
+
+/* Main Wrapper */
+.main-content {
+  flex-grow: 1;
+  z-index: 10;
+  padding-top: 70px;
+}
+
+/* Layout Utilities */
+.section {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+img {
+    max-height: 45vh;
+    max-width: auto;
+}
+
+.header {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  color: #ffffff;
+  max-width: 700px;
+  margin: 0 auto 1.5rem auto;
+  line-height: 1.1;
+  text-align: center; 
+}
+
+.projects-section {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  min-height: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects-title {
+  font-size: clamp(1.5rem, 2vw, 2rem);
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  color: #ffffff;
+  max-width: 700px;
+  margin: 0 auto 1.5rem auto;
+  line-height: 1.1;
+  text-align: center; 
+}
+
+.projects-desc {
+  color: #cbd5e1;
+  font-size: 1.15rem;
+  max-width: 50vw;
+  line-height: 1.6;
+  margin: 0 auto 2rem auto;
+  text-align: center;
+}
+
+.projects-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto; 
+}
+
+.projects-buttons-link {
+  background-color: rgba(30, 41, 59, 0.8);
+  color: #ffffff;
+  font-weight: 500;
+  padding: 0.75rem 1.5rem;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.projects-buttons-link:hover {
+  background-color: rgba(30, 41, 59, 1);
+}

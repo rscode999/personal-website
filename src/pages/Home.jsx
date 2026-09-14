@@ -1,11 +1,11 @@
 import React from 'react';
-import {useEffect} from 'react';
+import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
-import './Styles.css';
+import './Home.css';
 
-import resume from '../assets/placeholder.pdf';
+import resume from '../assets/shiraishi_reece_resume.pdf';
 
-import upcomingEvents from '../components/UpcomingEventsData.js';
 import ProgrammingLanguages from '../assets/ProgrammingLanguages.js';
 import Tools from '../assets/Tools.js';
 
@@ -38,7 +38,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* About Section */}
+
         <section id="about" className="section border-top">
           <h2 className="section-title">About Me</h2>
           <div className="about-grid">
@@ -60,12 +60,9 @@ export default function Home() {
 
 
         <section id="projects" className="section border-top">
-          <h2 className="section-title">Featured Projects</h2>
-
-          {/* title, description, linkText, linkUrl, imageUrl */}
-          <ProjectTable projects={upcomingEvents}/>
+          <h2 className="section-title">Projects</h2>
+          <a href="/projects#top" className="btn-primary">Featured Projects</a>
         </section>
-
 
         <section id="contact" className="section border-top contact-section">
           <h2 className="section-title">Get In Touch</h2>
