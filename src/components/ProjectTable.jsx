@@ -20,7 +20,7 @@ function ProjectTableRow({title, description, linkText, linkUrl}) {
 }
 
 /**
- * Stores each row where projects are, as listed in `projects`.
+ * Stores each row where projects are, as listed in `projects`. Has no children.
  * 
  * Row ordering from left to right: title and link, image, description
  * @param projects list of projects. Each contains the fields `title`, `description`, `linkText`, `linkUrl`, and `imageUrl`

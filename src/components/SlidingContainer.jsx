@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import './SlidingContainer.css';
 
 /**
- * Any component in a `SlidingContainer`, upon rendering, will slide to the left or right.
+ * Any child component in a `SlidingContainer`, upon rendering, will slide to the left or right.
  * Slides from the right for `direction`="right" and from the left for `direction`="left" (or anything that's not "right").
  */
 export default function SlidingContainer({ children, direction = 'left', className = "" }) {

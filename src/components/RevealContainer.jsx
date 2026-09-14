@@ -1,8 +1,10 @@
 import React, {useState, useEffect, useRef} from 'react';
 
 /**
- * Upon rendering, a RevealContainer will show each item inside in sequence from top to bottom,
+ * Upon rendering, a RevealContainer will show each child inside in sequence from top to bottom,
  * with a `delay` millisecond delay between each item's appearance.
+ * 
+ * Default delay: 500ms
  */
 export default function RevealContainer({ children, delay = 500 }) {
     const [visibleCount, setVisibleCount] = useState(0);

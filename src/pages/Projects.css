@@ -29,6 +29,10 @@ img {
     max-width: auto;
 }
 
+Pool {
+  margin: 1;
+}
+
 .header {
   font-size: clamp(2.5rem, 5vw, 4rem);
   font-weight: 800;

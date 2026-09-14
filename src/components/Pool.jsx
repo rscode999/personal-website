@@ -3,7 +3,7 @@ import React from 'react';
 import './Pool.css';
 
 /**
- * Renders a list of items inside a box
+ * Renders a list of items inside a box. Has no children.
  * @param title header for the box
  * @param items items to render inside
  */
