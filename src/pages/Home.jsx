@@ -75,7 +75,7 @@ export default function Home() {
               I have a collection of projects that I worked on, for classwork and outside of school.
             </p>
             <br/>
-            <a href="/projects#top" className="btn-primary">Featured Projects</a>
+            <Link to="/projects" className="btn-primary">Featured Projects</Link>
           </RevealContainer>
         </section>
 

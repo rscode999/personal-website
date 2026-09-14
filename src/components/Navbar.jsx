@@ -13,7 +13,7 @@ export default function Navbar() {
 
         <div className="navbar-links">
           <Link to="/">Home</Link>
-          <a href="/projects#top">Projects</a>
+          <Link to="/projects">Projects</Link>
           <a href='https://www.youtube.com/watch?v=xvFZjo5PgG0'>Deep Dark Secrets</a>
         </div>
 
