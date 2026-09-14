@@ -91,7 +91,7 @@ export default function Home() {
           </RevealContainer>
         </section>
 
-      <Footer/>
+        {/* Don't put a footer here. Otherwise it will render twice. */}
 
       </main>
     </Background>
