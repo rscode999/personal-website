@@ -152,7 +152,7 @@ export default function Projects() {
                         </SlidingContainer>
                     </section>
 
-                <Footer/>
+                    {/* don't add a footer. the footer comes from the layout component */}
             </main>
         </Background>
     );
