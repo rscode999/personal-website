@@ -2,9 +2,9 @@ import { useState, useEffect } from 'react';
 
 import './Projects.css';
 
-import Background from '../components/Background.jsx';
-import Navbar from '../components/Navbar.jsx';
-import Footer from '../components/Footer.jsx';
+import Background from '../components/Background.tsx';
+import Navbar from '../components/Navbar.tsx';
+// import Footer from '../components/Footer.tsx';
 
 import CastAutograd from '../assets/cast-autograd.png';
 import FastLinkedList from '../assets/fast-linked-list.png';
@@ -13,10 +13,11 @@ import StepperFx from '../assets/stepperfx.png';
 import TheftProtDevice from '../assets/theft-prot-device.jpg';
 import BS4Config from '../assets/bs4-config.png';
 
-import SlidingContainer from '../components/SlidingContainer.jsx';
-import Pool from '../components/Pool.jsx';
+import SlidingContainer from '../components/SlidingContainer.tsx';
+import Pool from '../components/Pool.tsx';
 
-export default function Projects() {
+
+export default function Projects(): React.JSX.Element {
     const[count, setCount] = useState(0);
 
     useEffect(() => {
@@ -50,7 +51,7 @@ export default function Projects() {
                             an architecture that CNet did not support.
                         </p>
                         <p className="projects-desc">
-                            CAST's compartmentalized, modular design and simple interface makes it perfect for quick creation and deployment
+                            CAST's comprehensive documentation, modular design, and simple interface makes it perfect for quick creation and deployment
                             of neural networks.
                         </p>
 
@@ -80,7 +81,7 @@ export default function Projects() {
                                 to a host computer through Bluetooth.                            
                             </p>
                             <p className="projects-desc">
-                                The control logic uses a custom round-robin scheduler with custom libraries for each 
+                                The control logic uses a custom round-robin scheduler with original libraries for each 
                                 of the peripheral devices. Operating with just 32KB of total RAM, the control libraries 
                                 are written to be concise and memory-efficient.
                             </p>
@@ -100,7 +101,7 @@ export default function Projects() {
                             <Pool title='Languages and Tools' items={['JavaScript', 'Vite', 'UI/UX', 'Frontend Development', 'React']}  style={{ marginTop: '1.5rem', marginBottom: '1.5rem' }}/>
         
                             <p className="projects-desc">
-                                As part of the GeoData project team, I improved the team's React/Vite.js website.
+                                As part of the GeoData project team, I improved the team's React/Vite.tsx website.
                                 With website subscription fees becoming a concern, I was tasked with creating a replacement.
                             </p>
                             <p className="projects-desc">

@@ -1,4 +1,4 @@
-const ProgrammingLanguages = [
+const ProgrammingLanguages: string[] = [
     "C++",
     "C",
     "Python",

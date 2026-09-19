@@ -1,12 +1,12 @@
-import React from 'react';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import './Navbar.css';
+
 
 /**
  * Navigation bar component. Contains links to other subpages. Remains on the top of the screen.
  */
-export default function Navbar() {
+export default function Navbar(): React.JSX.Element {
   return (
     <nav className="navbar">
       <div className="navbar-container">

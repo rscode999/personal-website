@@ -1,4 +1,4 @@
-const Tools = [
+const Tools: string[] = [
     "PyTorch",
     "Git/GitHub",
     "NumPy",

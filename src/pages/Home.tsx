@@ -6,18 +6,17 @@ import './Home.css';
 
 import resume from '../assets/shiraishi_reece_resume.pdf';
 
-import ProgrammingLanguages from '../assets/ProgrammingLanguages.js';
-import Tools from '../assets/Tools.js';
+import ProgrammingLanguages from '../assets/ProgrammingLanguages.ts';
+import Tools from '../assets/Tools.ts';
 
-import Pool from '../components/Pool.jsx';
-import ProjectTable from '../components/ProjectTable.jsx';
-import Footer from '../components/Footer.jsx';
-import Navbar from '../components/Navbar.jsx';
-import Background from '../components/Background.jsx';
-import RevealContainer from '../components/RevealContainer.jsx';
+import Pool from '../components/Pool.tsx';
+// import Footer from '../components/Footer.tsx';
+import Navbar from '../components/Navbar.tsx';
+import Background from '../components/Background.tsx';
+import RevealContainer from '../components/RevealContainer.tsx';
 
 
-export default function Home() {
+export default function Home(): React.JSX.Element {
 
   useEffect(() => {
     document.title = "RSCODE- Home"; 

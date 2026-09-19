@@ -1,10 +1,9 @@
-import React from 'react';
 import './Footer.css';
 
 /**
  * Component that renders at the bottom of the page.
  */
-export default function Footer() {
+export default function Footer(): React.JSX.Element {
   return (
     <footer className="footer">
       <div className="footer-container">

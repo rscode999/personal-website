@@ -2,11 +2,11 @@ import './background.css';
 
 import backgroundImage from '../assets/background.png';
 
+
 /**
- * Renders `child` with an image background.
- * @param child component to render with the website's background 
+ * Renders `children` with an image background.
  */
-export default function Background({ children }) {
+export default function Background({ children }: any ): React.JSX.Element {
   return (
     <div className='app-container'>
       <div 

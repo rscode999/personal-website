@@ -2,12 +2,12 @@ import { useState } from 'react';
 import { HashRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 
-import Home from './pages/Home.jsx';
-import Projects from './pages/Projects.jsx';
-import Layout from './components/Layout.jsx';
-import ScrollToTop from './components/ScrollToTop.jsx';
+import Home from './pages/Home.tsx';
+import Projects from './pages/Projects.tsx';
+import Layout from './components/Layout.tsx';
+import ScrollToTop from './components/ScrollToTop.tsx';
 
-function App() {
+function App(): React.JSX.Element {
   const [count, setCount] = useState(0);
 
   return (

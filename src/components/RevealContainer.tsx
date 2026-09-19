@@ -1,17 +1,30 @@
 import React, {useState, useEffect, useRef} from 'react';
 
+
+interface RevealContainerProps {
+    children?: any,
+    delay?: number
+}
+
+function assertPositive(val: number): asserts val is number {
+  if (typeof val !== "number") throw new Error("Value must be a number");
+  if (val < 0) throw new Error("Value must be positive");
+}
+
 /**
  * Upon rendering, a RevealContainer will show each child inside in sequence from top to bottom,
- * with a `delay` millisecond delay between each item's appearance.
+ * with a `delay` (integer, positive) millisecond delay between each item's appearance.
  * 
- * Default delay: 250ms
+ * Default delay: 150ms
  */
-export default function RevealContainer({ children, delay = 250 }) {
+export default function RevealContainer({ children, delay = 150 }: RevealContainerProps): React.JSX.Element {
+    assertPositive(delay);
+
     const [visibleCount, setVisibleCount] = useState(0);
     const [hasStarted, setHasStarted] = useState(false);
     const containerRef = useRef(null);
 
-    // 1. Observe when the element enters the viewport
+    //Observe when the element enters the viewport
     useEffect(() => {
         const observer = new IntersectionObserver(
             ([entry]) => {
@@ -30,7 +43,7 @@ export default function RevealContainer({ children, delay = 250 }) {
         return () => observer.disconnect();
     }, []);
 
-    // 2. Sequential logic starts only after hasStarted is true
+    //Sequential logic starts only after hasStarted is true
     useEffect(() => {
         if (!hasStarted) return;
 
