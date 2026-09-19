@@ -26,7 +26,7 @@ body {
 
 img {
     max-height: 45vh;
-    max-width: auto;
+    max-width: 100%;
 }
 
 Pool {

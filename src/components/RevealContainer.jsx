@@ -4,9 +4,9 @@ import React, {useState, useEffect, useRef} from 'react';
  * Upon rendering, a RevealContainer will show each child inside in sequence from top to bottom,
  * with a `delay` millisecond delay between each item's appearance.
  * 
- * Default delay: 500ms
+ * Default delay: 250ms
  */
-export default function RevealContainer({ children, delay = 500 }) {
+export default function RevealContainer({ children, delay = 250 }) {
     const [visibleCount, setVisibleCount] = useState(0);
     const [hasStarted, setHasStarted] = useState(false);
     const containerRef = useRef(null);

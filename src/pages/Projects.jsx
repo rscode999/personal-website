@@ -11,6 +11,8 @@ import FastLinkedList from '../assets/fast-linked-list.png';
 import GeodataWebsite from '../assets/geodata-website.png';
 import StepperFx from '../assets/stepperfx.png';
 import TheftProtDevice from '../assets/theft-prot-device.jpg';
+import BS4Config from '../assets/bs4-config.png';
+
 import SlidingContainer from '../components/SlidingContainer.jsx';
 import Pool from '../components/Pool.jsx';
 
@@ -35,6 +37,8 @@ export default function Projects() {
 
                         <img src={CastAutograd}/>
 
+                        <Pool title='Languages and Tools' items={['C++', 'CMake', 'Object-Oriented Design', 'Technical Documentation', 'GitHub Workflows']}  style={{ marginTop: '1.5rem', marginBottom: '1.5rem' }}/>
+
                         <p className="projects-desc">
                             The Compartmentalized Autograd System with Tensors (CAST) is the successor to the C++ CNet neural network framework.
                             Instead of creating and using networks implicitly, as with PyTorch, users add and compute directly through the network object.
@@ -58,9 +62,11 @@ export default function Projects() {
 
                     <section id='embedded-final-proj' className='projects-section'>
                         <SlidingContainer direction='left'>
-                            <h2 className="projects-title">Embedded Theft Protection Device</h2>
+                            <h2 className="projects-title">IoT Embedded Theft Protection Device</h2>
 
                             <img src={TheftProtDevice}/>
+
+                            <Pool title='Languages and Tools' items={['C', 'Embedded Systems', 'Breadboards', 'Communication Protocols']}  style={{ marginTop: '1.5rem', marginBottom: '1.5rem' }}/>
         
                             <p className="projects-desc">
                                 This device runs on a FRDM-KL46Z board, equipped with an ARM Cortex processor.
@@ -90,17 +96,19 @@ export default function Projects() {
                             <h2 className="projects-title">GeoData Website Improvements</h2>
 
                             <img src={GeodataWebsite}/>
+
+                            <Pool title='Languages and Tools' items={['JavaScript', 'Vite', 'UI/UX', 'Frontend Development', 'React']}  style={{ marginTop: '1.5rem', marginBottom: '1.5rem' }}/>
         
                             <p className="projects-desc">
                                 As part of the GeoData project team, I improved the team's React/Vite.js website.
                                 With website subscription fees becoming a concern, I was tasked with creating a replacement.
                             </p>
                             <p className="projects-desc">
-                                I was originally tasked to extend the "Our Work" subpage.
+                                I was originally slated to extend the "Our Work" subpage.
                                 Purely out of interest, I brought the site to deployable condition,
                                 adding 14 new subpages, CSS animations, and a unified style. 
                                 Although the team has since moved to a different website, the site proved to the team that hosting 
-                                its own website is possible and excellent.
+                                its own website is possible.
                             </p>
 
                             <div className="projects-buttons">
@@ -114,6 +122,8 @@ export default function Projects() {
                             <h2 className="projects-title">StepperFX</h2>
 
                             <img src={StepperFx}/>
+
+                            <Pool title='Languages and Tools' items={['Java', 'JavaFX', 'GUI Design', 'JUnit', 'Multithreading']}  style={{ marginTop: '1.5rem', marginBottom: '1.5rem' }}/>
         
                             <p className="projects-desc">
                                 The most popular Vigenere-based ciphers succumb to the Kasiski analysis, an algorithm published over 100 years ago.
@@ -139,6 +149,8 @@ export default function Projects() {
                             <h2 className="projects-title">Data Structures, Reimagined</h2>
 
                             <img src={FastLinkedList}/>
+
+                            <Pool title='Languages and Tools' items={['C++', 'Data Structures']}  style={{ marginTop: '1.5rem', marginBottom: '1.5rem' }}/>
         
                             <p className="projects-desc">
                                 Implemented in C++, the Data Structures Reimagined series consists
@@ -148,6 +160,26 @@ export default function Projects() {
 
                             <div className="projects-buttons">
                                 <a href="https://github.com/rscode999/utilities" className='projects-buttons-link'>GitHub</a>
+                            </div>
+                        </SlidingContainer>
+                    </section>
+
+                    <section id='utilities' className='projects-section'>
+                        <SlidingContainer direction='left'>
+                            <h2 className="projects-title">BeautifulSoup4 Program Downloader</h2>
+
+                            <img src={BS4Config}/>
+
+                            <Pool title='Languages and Tools' items={['Python', 'Beautiful Soup', 'JSON', 'Web Scraping']}  style={{ marginTop: '1.5rem', marginBottom: '1.5rem' }}/>
+        
+                            <p className="projects-desc">
+                                No package installer? No problem! The BS4 Program Downloader searches your system for any programs that you list in a JSON config.
+                                It automatically checks the provided download links, comparing your install with the latest version on the program's website.
+                                Any out-of-date programs are automatically downloaded to a folder of your choice.
+                            </p>
+
+                            <div className="projects-buttons">
+                                <a href="https://github.com/rscode999/bs4-version-check" className='projects-buttons-link'>GitHub</a>
                             </div>
                         </SlidingContainer>
                     </section>

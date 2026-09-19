@@ -68,7 +68,7 @@ export default function Home() {
 
 
         <section id="projects" className="section border-top">
-          <RevealContainer delay={200}>
+          <RevealContainer>
             <h2 className="section-title">Projects</h2>
 
             <p className="about-text">
