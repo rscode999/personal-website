@@ -4,8 +4,8 @@ import './Projects.css';
 
 import Background from '../components/Background.tsx';
 import Navbar from '../components/Navbar.tsx';
-// import Footer from '../components/Footer.tsx';
 
+import Autosec from '../assets/autosec.png';
 import CastAutograd from '../assets/cast-autograd.png';
 import FastLinkedList from '../assets/fast-linked-list.png';
 import GeodataWebsite from '../assets/geodata-website.png';
@@ -58,6 +58,30 @@ export default function Projects(): React.JSX.Element {
                         <div className="projects-buttons">
                             <a href="https://github.com/rscode999/cast-autograd" className='projects-buttons-link'>GitHub (CAST)</a>
                             <a href="https://github.com/rscode999/cnet" className='projects-buttons-link'>GitHub (CNet)</a>
+                        </div>
+                    </section>
+
+                    <section id='cast' className='projects-section'>
+                        <h2 className="projects-title">AutoSec</h2>
+
+                        <img src={Autosec}/>
+
+                        <Pool title='Languages and Tools' items={['Python', 'JSON', 'Slack API', 'MS Office API']}  style={{ marginTop: '1.5rem', marginBottom: '1.5rem' }}/>
+
+                        <p className="projects-desc">
+                            As secretary of my school's IEEE chapter, I developed the AutoSec (Automated Secretary) tool to aid in sending weekly newsletters.
+                            The program scans a Slack channel for announcements, converts the announcements into HTML, and sends the HTML as an email.
+                        </p>
+                        <p className="projects-desc">
+                            AutoSec, written in Python, leverages the Slack and Microsoft Office APIs, using JSON configurations to dictate formatting.
+                            For ease of use, the AutoSec scripts check the JSON configurations and API tokens for errors, stopping the program with a helpful error message.
+                        </p>
+                        <p className="projects-desc">
+                            AutoSec's simple, modular design matches the quality of handwritten newsletters, saving over 30 minutes of work per week.
+                        </p>
+
+                        <div className="projects-buttons">
+                            <a href="https://github.com/rscode999/autosec" className='projects-buttons-link'>GitHub</a>
                         </div>
                     </section>
 
